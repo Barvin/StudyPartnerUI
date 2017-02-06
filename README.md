@@ -2,7 +2,7 @@
 
 A prototype web app that matches you with students in need of study buddies.
 
-Hosted on [My KTH Profile](arvinb.com/TeamApp/index.html)
+Hosted on [My KTH Profile](https://people.kth.se/~arvinb/TeamApp/index.html)
 
 Created by:
 

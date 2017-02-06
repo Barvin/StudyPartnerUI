@@ -7,8 +7,8 @@ $(document).ready(function() {
 		body: "<p>This is a post</p>"
 	};
 
-	var el_html = template(context);
+	var data = template(context);
 
-	$("#render_here").html(el_html);
-	$("#render_here_again").html(el_html);
+	$("#render_here").html(data);
+	$("#render_here_again").html(data);
 });

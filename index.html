@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Welcome Page</title>
+  <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/handlebars.js"></script>
-  <link rel="stylesheet" href="css/custom.css"></link>
+  <script src="js/utility.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 
 </head>
@@ -44,47 +48,43 @@
 </nav>
 
 <div class="text-center">
-  <h1>TeamApp</h1>
-  <h4>The easiest way to find your project partner.</h4> 
+  <h1 style="display: inline">Start building your team</h1>
 </div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12" style="padding: 40px 60px 0px 60px">
-      <form>
-        <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-        </div>
-        <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-          <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-        </div>
-        <br>
-        <div class="wrapper">
-		<a href="home.html">
-          <button type="button" class="btn btn-primary">Log in</button>
-        </a>
-          <h6 class="bold">OR</h6>
-
-            <button type="button" class="btn btn-primary">Connect with LinkedIn</button>
-          <div class="wrapper">
-          </div>
-        </div>
-      </form>
-      <br>
-      <br>
-  </div>
-  <div class="row">
-      <div class="col-sm-12 wrapper">
-        <h4 class="bold">New here?</h4>
-		<a href="registration_page.html">
-			<button type="button" class="btn btn-primary">Register</button>
-		</a>
-      </div>
-  </div>
-
-    </div>
+  <div class="container">
+      <div class="row">
+	  <div class="col-sm-12">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div id="custom-search-input">
+						<div class="input-group col-md-12">
+							<input id="search" type="text" class="form-control input-lg" placeholder="First, select your course..." />
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-lg" type="button">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</span>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">Advanced Internetworking II (IK2217)</li>
+							<li class="list-group-item">Developing Mobile Applications(ID2216)</li>
+							<li class="list-group-item">Network Programming with Java(ID2212)</li>
+							<li class="list-group-item">Computer Hardware Engineering (ID1201)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+		</div>
+    <br>
+    <div class="row text-center">
+		<a href="results.html"><button type="button" class="btn btn-primary">Search for matches</button></a>
+		<p></p>
+		<p><b>No courses in the list?<br>
+		Modify your profile and select new courses!</b></p>		
+	</div>	
+	<div class="row text-center">
+	<a href="courses.html"><button type="button" class="btn btn-primary">Add a course</button></a>
+	</div>
 </div>
 
 </body>
